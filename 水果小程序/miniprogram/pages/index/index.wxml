@@ -1,9 +1,72 @@
 <!--index.wxml-->
 <view class='titleBox'>
-  
-  <!-- <image src="{{imgSrc}}"></image> -->
   <image class="img" src="../../images/erweima.png"></image>
   <view>会员余额：￥100.00</view>
-
-  
 </view>
+<view class="blockBox">
+  <view class="block">
+    <image class="icon" src="../../images/shangcheng.png"></image>
+    <view>商城</view>
+  </view>
+  <view class="block" style='margin-left:-1px;'>
+    <image class="icon" src="../../images/congzhi.png"></image>
+    <view>充值</view>
+  </view>
+</view>
+
+<view class="list" bindtap='jiluClick'>
+  <view class="zuoyou">
+    <image class="listIcon" src="../../images/xiaofeijilu.png"></image>
+    <text>消费记录</text>
+  </view>
+  <view class="zuoyou">
+    <text class="wenzhi">{{xiaofeijilu.length}} 条</text>
+    <image wx:if="{{!jiluShow}}" class="rightIcon" src="../../images/xiangyou.png"></image>
+    <image wx:if="{{jiluShow}}" class="rightIcon" src="../../images/xiangxia.png"></image>
+  </view>
+</view>
+<view class="itemBox" wx:if="{{jiluShow}}">
+  <view class="item" wx:for="{{xiaofeijilu}}" wx:key='{{index}}'>
+    <view style='width:100px;'>
+      <text>{{item.name}}</text>
+      <view style='font-size:9px'>{{item.date}}</view>
+    </view>
+    <view class="content">
+      <view wx:for="{{item.content}}" wx:key='{{index}}'>
+        <text class="contentFont">{{item.shuiguoming}}</text>
+        <text class="contentFont">{{item.zhongliang+' kg'}}</text>
+        <text class="contentFont">{{'￥'+item.money}}</text>
+      </view>
+    </view>
+    <view style='width:50px;'>{{'￥'+item.money}}</view>
+  </view>
+</view>
+
+<view class="list" bindtap='youhuijuan'>
+  <view class="zuoyou">
+    <image class="listIcon" src="../../images/youhuijuan.png"></image>
+    <text>未使用优惠劵</text>
+  </view>
+  <view class="zuoyou">
+    <text class="wenzhi">{{youhuijuan.length}} 张</text>
+    <image wx:if="{{!youhuijuanShow}}" class="rightIcon" src="../../images/xiangyou.png"></image>
+    <image wx:if="{{youhuijuanShow}}" class="rightIcon" src="../../images/xiangxia.png"></image>
+  </view>
+</view>
+<view wx:if="{{youhuijuanShow}}">
+  <view class="youhuijuanBox" wx:for="{{youhuijuan}}" wx:key='{{index}}'>
+    <image class="youhuijuan" src="../../images/youhuijuanbj.png"></image>
+    <view class="tiaojian">{{item.tiaojian}}</view>
+    <view class="shuoming">{{item.shuoming}}</view>
+    <view class="jine">{{item.jine}}<text style='font-size:12px;'>元</text></view>
+    <view class="youxiaoqi">有效期：{{item.youxiaoqi}}</view>
+  </view>
+</view>
+
+<view class="kefu">
+  <text class="kefuwenzhi">联系客服</text> |
+  <text class="kefuwenzhi">门店地址</text>
+</view>
+
+
+

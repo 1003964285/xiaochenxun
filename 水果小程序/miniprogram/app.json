@@ -6,7 +6,7 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#FFD306",
+    "navigationBarBackgroundColor": "rgba(229,182,68,1)",
     "navigationBarTitleText": "我的练习项目",
     "navigationBarTextStyle": "black"
   }

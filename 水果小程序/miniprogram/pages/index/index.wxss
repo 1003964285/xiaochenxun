@@ -1,24 +1,139 @@
 /**index.wxss**/
 .titleBox{
-  background: #FFD306;
+  /* background: #f4ea2a; */
+  background:rgb(229,182,68);
   width: 100%;
-  height: 150px;
+  height: 260px;
   text-align: center;
 }
 .img{
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 188px;
+  height: 188px;
   margin: 0 auto;
+  margin-top:20px;
 }
 
+.blockBox{
+  display: flex;
+  justify-content: space-between;
+}
+.block{
+  width:50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  height:150px;
+  border: 1px solid gainsboro;
+  font-weight: bold;
+  font-size:21px;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.list{
+  display:flex;
+  justify-content: space-between;
+  line-height: 60px;
+  margin: 0 10px;
+  border-bottom:0.1px solid gainsboro;
+}
+.zuoyou{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.rightIcon{
+  width: 15px;
+  height: 15px;
+  margin-right:0px;
+  margin-left: 10px;
+}
+.wenzhi{
+  font-size: 14px;
+  color:gainsboro;
+}
 
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color:#8a8a8a;
+  padding:5px 10px;
+}
+.item:nth-child(2n){
+  background: #e6e6e6;
+}
+.content{
+  font-size:11px;
+}
+.contentFont{
+  width:40px;
+  display: inline-block;
+}
+.youhuijuanBox{
+  position:relative;
+  text-align: center;
+}
+.youhuijuan{
+  margin:5px 10px;
+  width:90%;
+  height:100px;
+  
+}
+.tiaojian{
+  position: absolute;
+  top:20%;
+  left:15%;
+  color:#ffffff;
+}
+.shuoming{
+  position: absolute;
+  top:40%;
+  left:15%;
+  color:#ffffff;
+  font-weight:bold;
+}
+.jine{
+  position: absolute;
+  top:50%;
+  left:55%;
+  transform:translate(-0%,-60%);
+  color:#f4ea2a;
+  font-weight:bold;
+  font-size: 80px;
+}
+.youxiaoqi{
+  position: absolute;
+  bottom:10%;
+  left:50%;
+  transform:translate(-50%,0%);
+  color:#ffffff;
+  font-size:10px;
+}
 
-
-
-
-
-
+.kefu{
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color:rgb(107,120,137)
+}
+.kefuwenzhi{
+  display: inline-block;
+  width: 66px;
+  text-align: center;
+}
 
 
 
