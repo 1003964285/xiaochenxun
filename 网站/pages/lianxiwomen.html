@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<style type="text/css">
+			#lianxi{
+				position:relative;
+				margin:70px auto;
+				width:50%;
+			    /*border:1px solid rgb(101, 181, 100);*/
+			    padding: 10px;
+			    border-radius:8px;
+			    font-size:1rem;
+			    line-height:2rem;
+			    letter-spacing:5px;
+			    padding-left:70px;
+			    
+				background: linear-gradient(0deg, transparent 6px, rgb(101, 181, 100) 6px) repeat-y,
+			    linear-gradient(0deg, transparent 50%, rgb(101, 181, 100) 0) repeat-y,
+			    linear-gradient(90deg, transparent 50%, rgb(101, 181, 100) 0) repeat-x,
+			    linear-gradient(90deg, transparent 50%, rgb(101, 181, 100) 0) repeat-x;
+			  	background-size:3px 12px, 3px 12px, 12px 1px, 12px 1px;
+			  	background-position: 0 0, 100% 0, 0 0, 0 100%;
+				animation: move 1s infinite linear;
+			}
+			
+			
+			
+			@keyframes move {
+			  from {}
+			  to {background-position: 0 -12px, 100% 12px, 12px 0, -12px 100%;}
+			}
+			.title{
+				font-size:2rem;
+			    line-height:4rem;
+			    font-weight: 700;
+			    color: #121212;
+			    margin:60px 0 20px 0;
+			}
+			.titles{
+				display:inline-block;
+				width:88px;
+				text-align:left;
+				color:gray;
+			}
+			.touxiang{
+				position:absolute;
+				width:100px;
+    			border:5px solid rgb(101, 181, 100);
+    			border-radius: 50%;
+    			top: -18%;
+    			left: 5%;
+			}
+			.erweima{
+				position:absolute;
+				width:150px;
+    			top: 50%;
+    			left: 70%;
+    			transform:translate(0,-50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="navlist"><a href="index.html">首页</a></div>
+			<div class="navlist"><a href="goods.html">全部产品</a></div>
+			<div class="navlist"><a href="lianxiwomen.html">联系我们</a></div>
+			<div class="navlist"><a href="goods.html">新闻中心</a></div>
+		</div>
+		<div id="lianxi">
+			<img class="touxiang" src="../img/touxiang.jpg"/ style=" ">
+			<img class="erweima" src="../img/erweima.png"/>
+			
+			
+			<div class="title">联系我们</div>
+			<div id=""><span class="titles">公司名称</span><span class="content">：上海奥菲卡食品有限公司</span></div>
+			<div id=""><span class="titles">公司地址</span><span class="content">：浙江省嘉兴市洪合镇</span></div>
+			<div id=""><span class="titles">联系人</span><span class="content">：刘先生</span></div>
+			<div id=""><span class="titles">电话</span><span class="content">：1382566987</span></div>
+			<div id=""><span class="titles">邮编</span><span class="content">：66987</span></div>
+		</div>
+		
+		
+		
+		<div class="bottom">
+		  	<p>© 2015-2018 Bycouturier Limited.</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+	</script>
+</html>

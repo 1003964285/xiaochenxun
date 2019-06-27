@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>练习的网站</title>
+   	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+    <style type="text/css">
+    	.list{
+    		background: #ece9e9;
+    		border-radius:0.6rem;
+    		margin:0 auto;
+    		margin-top:20px;
+    	}
+    	.left{
+    		display: inline-block;
+    		width:40%;
+    		float:left;
+    		margin: 9% 0 0 10%;
+    	}
+    	.lianglie{
+    		display:inline-block;
+    		width:49%;
+    		text-align:center;
+    		border: solid 1px #dddfe1;
+    		line-height:40px;
+    		border-radius:0.6rem;
+    		overflow:hidden;
+    	}
+    	.lianglie img{
+    		width:100%;
+    	}
+    	.sankuai{
+    		display:inline-block;
+    		width:32%;
+    		text-align:center;
+    		border: solid 1px #dddfe1;
+    	}
+    </style>
+  </head>
+<body>
+	<div class="top">
+		<div class="navlist"><a href="index.html">首页</a></div>
+		<div class="navlist"><a href="goods.html">全部产品</a></div>
+		<div class="navlist"><a href="lianxiwomen.html">联系我们</a></div>
+		<div class="navlist"><a href="goods.html">新闻中心</a></div>
+	</div>
+	
+	
+	<div class="list" >
+  	<div class="left">
+  		<h1 class="title">一个名字的时代</h1>
+  		<p style="margin-top:20px;">在这个物质横流的时代，一个名字重要吗？在你回答之前，你再想个问题，名字到底是什么，如果没有名字会怎样。</p>
+  	</div>
+  	<img src="../img/bj.jpg" style="width:45%;"/>
+  </div>
+  
+  <div class="list" style="background:white;">
+  	<div class="lianglie">
+  		<img src="../img/liangkuai1.jpg"/><br />
+  		夏天的温情
+  	</div>
+  	<div class="lianglie" style="float:right;">
+  		<img src="../img/liangkuai1.jpg"/><br />
+  		夏天的温情
+  	</div>
+ 	</div>
+ 	
+  <div class="list" style="background:#ffe324;">
+  	<div class="left">
+  		<h1 class="title">更好的素描阴影</h1>
+  		<p style="margin-top:20px;">在这个物质横流的时代，一个名字重要吗？在你回答之前，你再想个问题，名字到底是什么，如果没有名字会怎样。</p>
+  	</div>
+  	<img src="../img/tab.png" style="width:45%;"/>
+  </div>
+  
+  <div class="list" style="background:white; display: flex;justify-content: space-between;">
+  	<div class="sankuai">
+  		<img src="../img/sankuai.jpg" /><br />
+  		夏天的温情
+  	</div>
+  	<div class="sankuai" >
+  		<img src="../img/sankuai.jpg" /><br />
+  		夏天的温情
+  	</div>
+  	<div class="sankuai" >
+  		<img src="../img/sankuai.jpg" /><br />
+  		夏天的温情
+  	</div>
+ 	</div>
+  
+  
+  
+  <div class="list" style="background:#987ff1;">
+  	<div class="left">
+  		<h1 class="title">更好的素描阴影</h1>
+  		<p style="margin-top:20px;">在这个物质横流的时代，一个名字重要吗？在你回答之前，你再想个问题，名字到底是什么，如果没有名字会怎样。</p>
+  	</div>
+  	<img src="../img/name.gif" style="width:45%;"/>
+  </div>
+  
+  
+  <div class="bottom">
+  	<p>© 2015-2018 Bycouturier Limited.</p>
+  </div>
+  
+  
+</body>
+<script type="text/javascript">
+	
+	bianse('.title')
+	
+	function bianse(className){
+		let div = document.querySelectorAll(className)[0];
+		setInterval(function(){
+			var color1 = 'rgba('+random()+','+random()+','+random()+',1)';
+			var color2 = 'rgba('+random()+','+random()+','+random()+',1)';
+			div.style.background = 'linear-gradient(to top,'+color1+','+color2+')';
+			div.style.webkitBackgroundClip = 'text';
+			div.style.color = 'transparent';
+		},1000)
+		function random(a=0,b=255){
+			return parseInt(Math.random()*(b-a+1)+a)
+		}
+	}
+</script>
+</html>
